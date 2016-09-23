@@ -1,5 +1,5 @@
 {
-    "id": "streamConfig.json",
+    "id": "config.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -12,11 +12,11 @@
         "columnDefault": {
             "$ref": "#/definitions/column"
         },
-        "columnCount": {
-            "type": "number"
+        "drawHorizontalLine": {
+            "typeof": "function"
         }
     },
-    "additionalProperties": true,
+    "additionalProperties": false,
     "definitions": {
         "columns": {
             "type": "object",

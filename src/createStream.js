@@ -57,7 +57,9 @@ const create = (row, columnWidthIndex, config) => {
 
   output = _.trimEnd(output);
 
-  process.stdout.write(output);
+  const outFn = config.outFunction || process.stdout.write;
+
+  outFn(output);
 };
 
 /**
@@ -83,7 +85,8 @@ const append = (row, columnWidthIndex, config) => {
 
   output = _.trimEnd(output);
 
-  process.stdout.write(output);
+  const outFn = config.outFunction || process.stdout.write;
+  outFn(output);
 };
 
 /**

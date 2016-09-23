@@ -16,7 +16,7 @@
             "type": "number"
         }
     },
-    "additionalProperties": true,
+    "additionalProperties": false,
     "definitions": {
         "columns": {
             "type": "object",
